@@ -1,0 +1,419 @@
+* {
+    box-sizing: content-box;
+}
+
+/*style pt header*/
+header {
+    width: 100%;
+    height: 200px;
+    background-color: #DBE9EE;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+}
+
+.header_1 {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    justify-content: flex-start;
+}
+
+.header_1 img {
+    width: 130px;
+    margin: auto;
+}
+
+.header_1 h1 {
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    margin: auto;
+}
+
+nav {
+    width: 50%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 300px;
+}
+
+.butoane {
+
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.butonBack {
+    /*
+    border: 2px solid black;
+    */
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    font-size: larger;
+    font-weight: bold;
+    color: blue;
+}
+
+/* - - - -  final style header - - -  - - */
+/*                main                */
+/*    menu section     */
+.menu-section {
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.admitereButton {
+    width: 30%;
+    height: 80%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.admitereButton #hov {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.admitereButton #hov:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.admitereButton:hover #hov {
+    padding-right: 25px;
+}
+
+.admitereButton:hover #hov:after {
+    opacity: 1;
+    right: 0;
+}
+
+.admitereButton a {
+    font-size: 25px;
+    text-decoration: none;
+}
+
+p {
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+}
+
+h2 {
+    width: 80%;
+    margin: auto;
+    font-size: 25px;
+}
+
+/*      - - - -     section admitere licenta - -- - - -   */
+
+.licenta-image {
+    width: 70%;
+    height: 400px;
+    background-image: url("./Resurse/AdmitereLicenta.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+}
+
+.line1 {
+    animation-name: changeOpacity;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.line2 {
+    animation-name: changeOpacity2;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.admitereButton span {
+    font-size: 40px;
+}
+
+.admitereLicenta a {
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+ul {
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+/*      - - - -     section admitere master - -- - - -   */
+
+.master-image {
+    width: 70%;
+    height: 400px;
+    background-image: url("./Resurse/Admitere-master-1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+}
+
+details {
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+.admitereMaster a {
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+/*  - - - -  -  doctorat section - - - -  */
+.doctoratSection ol,
+ul {
+    margin-right: 10%;
+}
+
+.doctorat-image {
+    width: 70%;
+    height: 400px;
+    background-image: url("./Resurse/AdmitereDoctorat1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+ol {
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+.doctoratSection a {
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+.doctoratSection ol a {
+    margin-left: 0%;
+}
+
+.doctoratSection h2 a {
+    margin-left: 0%;
+    font-size: inherit;
+}
+
+
+
+
+
+/* - - - - - -  footer - - - - - - - */
+footer {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #DBE9EE;
+    padding-top: 20PX;
+    margin-top: 20px;
+}
+
+.footerLogo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+}
+
+.footerScris {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    width: 55%;
+    margin-top: 0px;
+}
+
+.footerHarta {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+}
+
+@keyframes changeOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+        color: yellow;
+    }
+
+    50% {
+        right: 0.5;
+        color: blue;
+    }
+
+    100% {
+        opacity: 1;
+        color: red;
+    }
+}
+
+@keyframes changeOpacity2 {
+    0% {
+        width: 25%;
+    }
+
+    25% {
+        width: 25%;
+    }
+
+    50% {
+        width: 50%;
+    }
+
+    100% {
+        width: 95%
+    }
+}
+
+/* - - - - phone - - - */
+
+@media only screen and (max-width: 600px) {
+    
+    /* style header for phone */
+    header {
+        height: fit-content;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .header_1 img {
+        width: 50px;
+        margin: auto;
+    }
+
+    .header_1 h1 {
+        font-size: 20px;
+    }
+
+    .header_1 {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav a{
+        font-size: 15px;
+    }
+
+    .butonBack {
+        margin-top: 0px;
+    }
+    /* - - - main style - - - -  */
+
+    .admitereButton {
+        display: none;
+    }
+    
+    .licenta-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* - - - footer - - - */
+    footer {
+        height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .footerLogo img{
+        width: 100px;
+    }
+    
+    .footerScris {
+        height: fit-content;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .footerScris h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .footerScris p{
+        font-size: 13px;
+    }
+
+    .footerHarta {
+        width: 100%;
+    }
+    
+    iframe {
+        width: 50%;
+        margin: auto;
+    }
+}

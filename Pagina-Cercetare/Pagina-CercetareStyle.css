@@ -1,0 +1,434 @@
+* {
+    box-sizing: content-box;
+}
+
+/*style pt header*/
+header {
+    width: 100%;
+    height: 200px;
+    background-color: #D5B9B2;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+}
+
+.header_1 {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    justify-content: flex-start;
+}
+
+.header_1 img {
+    width: 130px;
+    margin: auto;
+}
+
+.header_1 h1 {
+    text-align: center;
+    color: black;
+    /*font-family: 'Boogaloo', cursive;*/
+    font-size: 25px;
+    margin: auto;
+}
+
+nav {
+    width: 50%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 300px;
+}
+
+.butoane {
+
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.butonBack {
+    /*
+    border: 2px solid black;
+    */
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    font-size: larger;
+    font-weight: bold;
+    color: blue;
+}
+
+/* - - - - - -  main - - - - -  - */
+/*construim 2 div-uri pentru cercetare si laboratoare*/
+
+main{
+    background-color: #ECE2D0;
+    padding-bottom: 50px;
+}
+
+.proiecte {
+    width: 50%;
+    height: 100%;
+    background-image: url("./resurse/OIP.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/*  - - - -  style div laboratoare */
+
+.laboratoare {
+    width: 50%;
+    height: 100%;
+    background-image: url("./resurse/laboratoare.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.optionLab{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proiecteLab {
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/*style  div proiecte */
+
+.proiecte button {
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.proiecte button:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border: 1px solid blue;
+    border-radius: 10px;
+
+}
+
+.laboratoare button {
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 2em;
+}
+
+.optionLab button{
+    font-size: 1.5em;
+}
+
+.laboratoare button:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border: 1px solid blue;
+    border-radius: 10px;
+
+}
+
+/*toggle1 div stilizare*/
+
+.tabcontent {
+    width: 80%;
+    margin: auto;
+    display: none;
+    margin-top: 50px;
+}
+
+#imgInitial img {
+    height: 80px;
+    width: 132;
+    margin: 20px;
+}
+
+/*style div1_1*/
+
+.imgDiv1_1 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.imgDiv1_1_1 img {
+    width: 100%;
+    height: 200px;
+
+}
+
+.imgDiv1_1_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    height: 300px;
+    margin: 0px 10px;
+}
+
+/* style div 1_2*/
+
+.imgDiv1_2 {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.imgDiv1_2_1 {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgDiv1_2 img {
+    height: 200px;
+    width: 80%;
+}
+
+/*Stilizare pentru LABORATOARE*/
+
+/*stilizam imaginea*/
+.imgEcotextil {
+    width: 40vw;
+    margin-left: 30%;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24,
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+h2 {
+    text-align: center;
+}
+/*final main */
+/*style footer*/
+
+footer {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #BFB5AF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footerLogo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+}
+
+.footerScris {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    width: 55%;
+    margin-top: 50px;
+}
+
+.footerHarta {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+}
+
+
+/* - - - - phone - - - */
+
+@media only screen and (max-width: 600px) {
+    
+    /* style header for phone */
+    header {
+        height: fit-content;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .header_1 img {
+        width: 50px;
+        margin: auto;
+    }
+
+    .header_1 h1 {
+        font-size: 20px;
+    }
+
+    .header_1 {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav a{
+        font-size: 15px;
+    }
+
+    .butonBack {
+        margin-top: 0px;
+    }
+
+    /*style main*/
+    
+    .proiecteLab {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .proiecte {
+        width: 90%;
+        height: 300px;
+        
+    }
+
+    .proiecte button{
+        font-size: 1.3em;
+    }
+
+    .laboratoare {
+        width: 90%;
+        height: 300px;
+    }
+
+    .laboratoare button{
+        font-size: 1.3em;
+    }
+
+    .optionLab button{
+        font-size: 1em;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    .imgDiv1_1 {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .imgDiv1_1_1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .imgDiv1_2 {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .imgDiv1_2_1 {
+        width: 100%;
+        height: auto;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    /* - - - footer - - - */
+    footer {
+        height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .footerLogo img{
+        width: 100px;
+    }
+    
+    .footerScris {
+        height: fit-content;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .footerScris h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .footerScris p{
+        font-size: 13px;
+    }
+
+    .footerHarta {
+        width: 100%;
+    }
+    
+    iframe {
+        width: 50%;
+        margin: auto;
+    }
+}

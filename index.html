@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="pagina-principala-style.css">
+    <script src="./paginaPrincipalaScript.js"></script>
+    <title>Pagina Principala</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<!-- header -->
+
+<body>
+    <header>
+        <div class="header_1">
+            <img src="./Resurse/background_header.jpg" alt="logo">
+            <h1>Domeniul Inginerie Chimica <br> Facultatea de Design Industrial si Managementul Afacerilor</h1>
+        </div>
+
+        <nav>
+            <a href="./Despre_Noi_page/despre_Noi_page.html">Despre noi</a>
+            <a href="./Pagina-secundara/pagina-secundara.html">Studii</a>
+            <a href="./Pagina-Cercetare/Pagina-Cercetare.html">Cercetare</a>
+            <a href="./Pagina-studenti/pagina-studenti.html">Studenti</a>
+            <a href="./pagina Admitere/Pagina_Admitere.html">Admitere</a>
+        </nav>
+    </header>
+    <!--final header-->
+    <!-- inceput main -->
+    <main>
+        <div class="imgMain1">
+            <a href="https://www.facebook.com/IC.DIMA.TUIASI" target="_blank"><img src="./Resurse/facebookLogo.jpg"
+                    alt="facebookLogo">Urmărește-ne
+            </a>
+            <a onclick="showForm()"><img src="./Resurse/form_image.jpg" alt="Form image">Contactează-ne</a>
+        </div>
+        <!--  - - div formular - - -  -->
+
+        <div id="myForm">
+            <form class="form-container">
+                <div class="form-label">
+                    <label for="nume">Nume si prenume</label><br>
+                    <input type="text" placeholder="Nume">
+                    <input type="text" placeholder="Prenume"><br>
+                </div>
+                <div class="form-label">
+                    <label for="data">Data nasterii</label><br>
+                    <input type="date"><br>
+                </div>
+                <div class="form-label">
+                    <label for="adress">Adresa</label><br>
+                    <input type="text" placeholder="Adresa dvs.">
+                </div>
+                <div class="form-label">
+                    <label for="emai">Email</label><br>
+                    <input type="email" placeholder="Scrieti adresa de email">
+                </div>
+                <div class="form-label">
+                    <label for="phone">Telefon</label><br>
+                    <input type="tel" placeholder="Scrieti numarul de telefon">
+                </div>
+                <div class="form-label">
+                    <label for="intrebari">Intrebari si sugestii</label><br>
+                    <textarea name="intebari" cols="30" rows="10" placeholder="Scrieti aici..."></textarea>
+                </div>
+                <button type="submit" onclick="hideForm()">Trimiteti formularul</button>
+            </form>
+        </div>
+
+
+        <!-----   textul h2 main text   ------>
+        <div class="mainText">
+            <h2>Domeniul Inginerie Chimică - Specializarea Tehnologie Chimica Textilă,
+                 din cadrul  Facultății de Design Industrial și Managementul Afacerilor,
+                 oferă oportunităţi pentru aplicaţii dinamice şi creative aflate la granița dintre textile şi chimie.
+            </h2>
+            <p>Noi promovăm creativitatea ca factor cheie în dezvoltarea competențelor personale, anteprenoriale și
+                sociale ale studenților noștri.</p>
+            <p style="color: red;">Cu ce ne ocupăm?</p>
+            <p>Conferim materialelor textile confort (tușeu plăcut, proprietăți de ignifugare, antimurdărire,
+                hidrofobizare etc.), aspect estetic (vopsirea și imprimarea materialelor textile) și o serie de efecte
+                benefice asupra organismului (textile cosmetic, medicale, aromotextile etc.). 
+            </p>
+        </div>
+        <!-- - - - finish main text - - - -->
+        <!-- video pagina principala-->
+        <video controls autoplay loop muted>
+            <source src="./Resurse/video_pagina_principala.mp4" type="video/mp4">
+        </video>
+        <!-- div colectiv -->
+        <div class="colectiv">
+            <img src="./Resurse/colectivImg1.jpg" alt="imagine colectiv">
+            <div class="colectivButton">
+                <button onclick="showColectiv()" style="background-color: #E2D686;">Membrii departamentului</button>
+                <div id="ourColectiv">
+                    <caption>
+                        <details>
+                            <summary><span class="material-symbols-outlined">
+                                    person
+                                </span>CONF. DR. ING. MAIER STELIAN SERGIU</summary>
+                            <P>smaier@tuiasi.ro</P>
+                        </details>
+                        <details>
+                            <summary><span class="material-symbols-outlined">
+                                    person
+                                </span>CONF. DR. ING. POPESCU VASILICA</summary>
+                            <p>vpopescu65@tuiasi.ro</p>
+                        </details>
+                        <details>
+                            <summary><span class="material-symbols-outlined">
+                                    person
+                                </span>SEF LUCR. DR. ING. BUCISCANU INGRID</summary>
+                            <P>iiacomi@tuiasi.ro</P>
+                        </details>
+                        <details>
+                            <summary><span class="material-symbols-outlined">
+                                    person
+                                </span>SEF LUCR. DR. ING. DANILA ANGELA</summary>
+                            <P>acerempei@tuiasi.ro</P>
+                        </details>
+                        <details>
+                            <summary><span class="material-symbols-outlined">
+                                    person
+                                </span>SEF LUCR. DR. ING. MAIER VASILICA</summary>
+                            <P>vmaier@tuiasi.ro</P>
+                        </details>
+                        <details>
+                            <summary><span class="material-symbols-outlined">
+                                    person
+                                </span>SEF LUCR. DR. ING. PRUNEANU MELINDA</summary>
+                            <P>melindap@tuiasi.ro</P>
+                        </details>
+                        <details>
+                            <summary><span class="material-symbols-outlined">
+                                    person
+                                </span>SEF LUCR. DR. ING. TARABOANTA IRINA</summary>
+                            <P>itarab@tuiasi.ro</P>
+                        </details>
+                    </caption>
+                </div>
+            </div>
+            <img src="./Resurse/colectivImg2.jpg" alt="imagine colectiv 2">
+        </div>
+    </main>
+    <footer>
+        <div class="footerLogo">
+            <img src="./Resurse/cropped-logo-dima-iasi2.jpg" alt="logo">
+        </div>
+        <div class="footerScris">
+            <h2>Facultatea de Design Industrial și Managementul Afacerilor</h2>
+            <p>Adresa: Str. Prof. Dr. Doc. Dimitrie Mangeron, Nr. 29, Iași, 700050 <br>
+                Telefon/Fax: +40 232 230491- <br>
+                E-mail: decanat@dima.tuiasi.ro</p>
+        </div>
+        <div class="footerHarta">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2713.2287195277204!2d27.593034514953377!3d47.15337472717038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cafb99efc12601%3A0xc6eae9d021c194b2!2sFacultatea%20de%20Design%20Industrial%20%C8%99i%20Managementul%20Afacerilor!5e0!3m2!1sro!2sro!4v1657634180495!5m2!1sro!2sro"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+</body>
+
+</html>

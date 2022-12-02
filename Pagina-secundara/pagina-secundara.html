@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studii</title>
+    <link rel="stylesheet" href="./pagina-secundara-style.css">
+    <!-- <script src="./paginaSecundaraScript.js"></script>-->
+
+</head>
+
+<body>
+    <!-- - - - header - - - -->
+    <header>
+        <div class="header_1">
+            <img src="../Resurse/background_header.jpg" alt="logo">
+            <h1>Domeniul Inginerie Chimica <br> Facultatea de Design Industrial si Managementul Afacerilor</h1>
+        </div>
+
+        <nav>
+            <div class="butoane">
+                <a href="../Despre_Noi_page/despre_Noi_page.html">Despre noi</a>
+                <a href="./pagina-secundara.html" style="color: red;">Studii</a>
+                <a href="../Pagina-Cercetare/Pagina-Cercetare.html">Cercetare</a>
+                <a href="../Pagina-studenti/pagina-studenti.html">Studenti</a>
+                <a href="../pagina Admitere/Pagina_Admitere.html">Admitere</a>
+            </div>
+            <div class="butonBack">
+                <a href="../index.html">Home</a>
+            </div>
+        </nav>
+    </header>
+    <!-- final header-->
+    <main>
+        <!--  - -  titlul  - - -->
+        <h1>Departamentul Inginerie Chimică în Textile și Pielărie<br> gestionează programe de studii de licență și
+            masterat
+            din domeniul Inginerie Chimică</h1>
+        <div class="imagine1">
+            <!-- carusel pt Licenta-->
+            <div class="slideshow-container">
+                <img src="../Resurse/Img1_paginaSecundara.jpg" class="slideImage">
+                <img src="../Resurse/pozaLicenta2.jpg" class="slideImage">
+                <img src="../Resurse/pozaLicenta3.jpg" class="slideImage">
+                <img src="../Resurse/pozaLicenta4.jpg" class="slideImage">
+            </div>
+            <script>
+                const slideshowImages = document.getElementsByClassName("slideImage");
+
+                const nextImageDelay = 3000;
+                let currentImageCounter = 0;
+
+                slideshowImages[currentImageCounter].style.opacity = 1;
+
+                setInterval(nextImage, nextImageDelay);
+
+                function nextImage() {
+                    slideshowImages[currentImageCounter].style.opacity = 0;
+                    currentImageCounter = (currentImageCounter + 1) % slideshowImages.length;
+                    slideshowImages[currentImageCounter].style.opacity = 1;
+                }
+            </script>
+
+            <caption>
+                <details>
+                    <summary> Tehnologie chimica textilă - Licență </summary>
+                    <p> O particularitate a specializării
+                        este reprezentată de necesitatea abordării unor domenii conexe <br>din sfera chimiei fibrelor
+                        naturale și chimice, biochimie,
+                        sintezei fine, protecției mediului, utilizării unor tehnici de mare randament<br> (câmpuri
+                        electrice de înaltă frecvență, ultrasunete,
+                        plasmă), ceea ce se reflectă în curricula specializării și în conținutul disciplinelor studiate.
+                    </p>
+                </details>
+            </caption>
+        </div>
+        <!-- - - - - - - - CARUSEL MASTER - - - - - - - --->
+        <div class="slideshow-containerM">
+
+            <div class="mySlidesM fadeM">
+                <div class="numbertextM">1 / 4</div>
+                <img src="../Resurse/pagina secundara/img2_paginaSecundara.jpg">
+                <div class="textM"></div>
+            </div>
+
+            <div class="mySlidesM fadeM">
+                <div class="numbertextM">2 / 4</div>
+                <img src="../Resurse/pagina secundara/imgMaster2 (2).jpg">
+                <div class="textM"></div>
+            </div>
+
+            <div class="mySlidesM fadeM">
+                <div class="numbertextM">3 / 4</div>
+                <img src="../Resurse/pagina secundara/imgMaster3.jpg">
+                <div class="textM"></div>
+            </div>
+            <div class="mySlidesM fadeM">
+                <div class="numbertextM">4 / 4</div>
+                <img src="../Resurse/pagina secundara/imgMaster4.jpg">
+                <div class="textM"></div>
+            </div>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dotM"></span>
+            <span class="dotM"></span>
+            <span class="dotM"></span>
+            <span class="dotM"></span>
+        </div>
+        <caption>
+            <details>
+                <summary>Ecodesign în finisarea textilelor - Master</summary>
+                <p>De ce?
+                    Eco design is intended to create environmentally fiendly textile technologies and products, a
+                    new trend building a
+                    lifestyle that respects the environment. Eco design in textile finishing is at the very heart of
+                    this much-needed change
+                    in the industri. New ideas and progress are born from the creation of innovative, inspiring and
+                    high-performing technologies
+                    and materials. </p>
+            </details>
+        </caption>
+
+        <!-- - - -  scrip carusel master - - - -  --->
+        <script>
+            let slideIndexM = 0;
+            showSlidesM();
+
+            function showSlidesM() {
+                let i;
+                let slides = document.getElementsByClassName("mySlidesM");
+                let dots = document.getElementsByClassName("dotM");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndexM++;
+                if (slideIndexM > slides.length) { slideIndexM = 1 }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndexM - 1].style.display = "block";
+                dots[slideIndexM - 1].className += " active";
+                setTimeout(showSlidesM, 3000); // Change image every 2 seconds
+            }
+        </script>
+        <!-- - - - - final script carusel master - - - -->
+    </main>
+    <footer>
+        <div class="footerLogo">
+            <img src="../Resurse/cropped-logo-dima-iasi2.jpg" alt="logo">
+        </div>
+        <div class="footerScris">
+            <h2>Facultatea de Design Industrial și Managementul Afacerilor</h2>
+            <p>Adresa: Str. Prof. Dr. Doc. Dimitrie Mangeron, Nr. 29, Iași, 700050 <br>
+                Telefon/Fax: +40 232 230491- <br>
+                E-mail: decanat@dima.tuiasi.ro</p>
+        </div>
+        <div class="footerHarta">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2713.2287195277195!2d27.593034514953377!3d47.153374727170394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cafb99efc12601%3A0xc6eae9d021c194b2!2sFacultatea%20de%20Design%20Industrial%20%C8%99i%20Managementul%20Afacerilor!5e0!3m2!1sro!2sro!4v1654523226249!5m2!1sro!2sro"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studenti</title>
+    <link rel="stylesheet" href="./paginaStudentiStyle.css">
+    <script src="./paginaStudentiScript.js"></script>
+    <!--<script src="./caruselScript.js"></script>-->
+</head>
+
+<body>
+
+    <!-- - - header - - -->
+    <header>
+        <div class="header_1">
+            <img src="../Resurse/background_header.jpg" alt="logo">
+            <h1>Domeniul Inginerie Chimica <br> Facultatea de Design Industrial si Managementul Afacerilor</h1>
+        </div>
+
+        <nav>
+            <div class="butoane">
+                <a href="../Despre_Noi_page/despre_Noi_page.html">Despre noi</a>
+                <a href="../Pagina-secundara/pagina-secundara.html">Studii</a>
+                <a href="../Pagina-Cercetare/Pagina-Cercetare.html">Cercetare</a>
+                <a href="./pagina-studenti.html" style="color: red;">Studenti</a>
+                <a href="../pagina Admitere/Pagina_Admitere.html">Admitere</a>
+            </div>
+            <div class="butonBack">
+                <a href="../index.html">Home</a>
+            </div>
+        </nav>
+    </header>
+    <!-- - - - - final header - - - - -->
+    <main>
+
+        <div class="mainDiv">
+            <div class="studentOption">
+                <!--adaugam butoanele pentru studenti-->
+                <div class="studentdiv">
+                    <a href="./Resurse-pagina-studenti/Calendar-2020-2021.pdf" target="_blank">Calendar 2020-2021</a>
+                </div>
+                <!--adaugam buton dropdown pt orar-->
+                <div class="dropdown, studentdiv">
+                    <a onclick="myFunction()" class="dropbtn" style="cursor: pointer;">Orar</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="./Resurse-pagina-studenti/Orar anul I EFT_SEM II 10.03.2022.pdf" target="_blank">Orar
+                            anul I</a>
+                        <a href="./Resurse-pagina-studenti/Orar anul II EFT_SEM II.pdf" target="_blank">Orar anul II</a>
+                        <a href="./Resurse-pagina-studenti/ORAR_Inginerie   Chimica_Licenta_2021-2022_SEM_ II_11.03.2022_FINAL.pdf"
+                            target="_blank">Orar licenta</a>
+                    </div>
+                </div>
+                <div class="studentdiv">
+                    <a href="./Resurse-pagina-studenti/186468894_291903009238898_9062239979422864223_n.jpg"
+                        target="_blank">Cercuri stiintifice</a>
+                </div>
+                <div class="studentdiv">
+                    <a href="https://asitexlocdemunca.blogspot.com/" target="_blank">Oferte locuri de munca</a>
+                </div>
+                <div class="studentdiv">
+                    <a onclick="toggleFunction()" style="cursor: pointer;">Facilitati studenti</a>
+                </div>
+            </div>
+            <!--     --- carusel---      -->
+            <div class="studentCarusel">
+                <img src="./Resurse-pagina-studenti/imgStudenti1.jpg" class="imgSlide">
+                <img src="./Resurse-pagina-studenti/imgStudenti2.jpg" class="imgSlide">
+                <img src="./Resurse-pagina-studenti/imgStudenti3.jpg" class="imgSlide">
+                <img src="./Resurse-pagina-studenti/imgStudenti4.jpg" class="imgSlide">
+                <img src="./Resurse-pagina-studenti/imgStudenti5.jpg" class="imgSlide">
+                <img src="./Resurse-pagina-studenti/imgStudenti6.jpg" class="imgSlide">
+            </div>
+            <script>
+                const slideshowImages = document.querySelectorAll(".imgSlide");
+
+                const nextImageDelay = 3000;
+                let currentImageCounter = 0;
+
+                slideshowImages[currentImageCounter].style.opacity = 1;
+                //slideshowImages[currentImageCounter].style.display = "block";
+
+                setInterval(nextImage, nextImageDelay);
+
+                function nextImage() {
+                    slideshowImages[currentImageCounter].style.opacity = 0;
+                    //slideshowImages[currentImageCounter].style.display = "none";
+                    currentImageCounter = (currentImageCounter + 1) % slideshowImages.length;
+                    slideshowImages[currentImageCounter].style.opacity = 1;
+                    //slideshowImages[currentImageCounter].style.display = "block";
+
+                }
+            </script>
+        </div>
+
+        <!-- - -  div facilitati studenti - - - -->
+        <div id="toggleDIV">
+            <H1>Facilităţi studenţi</H1>
+            <p>Studenţii Facultăţii de Design Industrial și Managementul Afacerilor beneficiază de condiţii de studiu
+                din cele mai bune din ţară şi chiar din Europa. Spaţiile de învăţământ ale Facultăţii sunt la nivel
+                occidental, iar dotarea cu tehnică de calcul şi echipamente de laborator este una deosebită.</p>
+            <img src="./Resurse-pagina-studenti/imgFacilitatiStudenti.jpg" alt="image" width="100%">
+            <p>În perioada studiilor studenţii pot beneficia de urmatoarele:</p>
+            <p>&#8594; Infrastructură de calitate: amfiteatre moderne, laboratoare dotate cu tehnologii de ultimă
+                generație, sisteme CAD-CAM, tehnică de calcul, echipamente de cercetare și studiu;</p>
+            <p>&#8594; Stagii de practică la firmele de top din domeniu în țară și străinătate gratuite;</p>
+            <p>&#8594; Burse de studiu pentru 30% dintre studenții facultății;</p>
+            <p>&#8594; Burse de performanță oferite de agenți economici de profil;</p>
+            <p>&#8594; Burse de ajutor social, ajutoare sociale pentru studenții defavorizați;</p>
+            <p>&#8594; Burse de studii în străinătate, la universități de prestigiu prin programul Socrates-Erasmus;</p>
+            <p>&#8594; Cazare pentru toţi studenţii facultăţii, cu domiciliul în altă localitate decât municipiul Iaşi,
+                în cel mai mare Campus universitar din ţară – Campusul “Tudor Vladimirescu”; Studenţii căsătoriţi pot
+                primi cazare în cămine de familişti;</p>
+            <p>&#8594; Cantină-restaurant cu o capacitate de 300 locuri;</p>
+            <p>&#8594; Complex sportive: 2 săli de sport, 2 săli de fitness, 2 terenuri de fotbal cu gazon artificial, 2
+                terenuri de baschet/hambal;</p>
+            <p>&#8594; Tabere tematice studențeşti gratuite pe perioada vacanțelor de iarnă și vară;</p>
+            <p>&#8594; Asistență medicală gratuită;</p>
+            <p>&#8594; Legitimații de călătorie gratuite și cu reducere pentru transportul în Munucipiul Iași și spre
+                localitatea de domiciliu;</p>
+            <p>&#8594; Posibilitatea de a participa la viaţa socială prin activarea în diferite organizaţii de tip
+                sindical sau cu caracter profesional, cum este BEST (organizaţie a studenţilor de profil tehnic din
+                Europa);</p>
+    </main>
+    <!-- - - - -  footer - - - - - -->
+    <footer>
+        <div class="footerLogo">
+            <img src="../Resurse/cropped-logo-dima-iasi2.jpg" alt="logo">
+        </div>
+        <div class="footerScris">
+            <h2>Facultatea de Design Industrial și Managementul Afacerilor</h2>
+            <p>Adresa: Str. Prof. Dr. Doc. Dimitrie Mangeron, Nr. 29, Iași, 700050 <br>
+                Telefon/Fax: +40 232 230491- <br>
+                E-mail: decanat@dima.tuiasi.ro</p>
+        </div>
+        <div class="footerHarta">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2713.2287195277195!2d27.593034514953377!3d47.153374727170394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cafb99efc12601%3A0xc6eae9d021c194b2!2sFacultatea%20de%20Design%20Industrial%20%C8%99i%20Managementul%20Afacerilor!5e0!3m2!1sro!2sro!4v1654523226249!5m2!1sro!2sro"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <!--final footer-->
+
+
+</body>
+
+</html>
